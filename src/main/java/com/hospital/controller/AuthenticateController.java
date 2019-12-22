@@ -38,6 +38,9 @@ public class AuthenticateController {
 
         model.put("account", accountDto);
 
+        val session = request.getSession();
+        session.setAttribute("doctor",accountDto);
+
         return "medical-home";
     }
 

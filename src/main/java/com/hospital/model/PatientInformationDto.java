@@ -5,7 +5,7 @@ import lombok.Data;
 import java.time.ZonedDateTime;
 
 @Data
-public class PatientDto {
+public class PatientInformationDto {
 
      private String userId;
      private String accountId;

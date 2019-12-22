@@ -9,7 +9,7 @@ import java.time.ZonedDateTime;
  * @project hospital-api-spec
  */
 @Data
-public class PatientDay5Dto extends PatientDto {
+public class PatientDay5InformationDto {
     private String patientId;
     private String e2;
     private String fsh;

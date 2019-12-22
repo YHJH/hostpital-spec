@@ -1,6 +1,6 @@
 package com.hospital.api;
 
-import com.hospital.model.PatientDto;
+import com.hospital.model.PatientInformationDto;
 import com.hospital.model.PatientMedicalRecordXrefDto;
 
 import java.util.List;
@@ -16,26 +16,26 @@ public interface PatientServiceApi {
      * @param user
      * @return
      */
-    PatientDto addPatient(final PatientDto user);
+    PatientInformationDto addPatient(final PatientInformationDto user);
 
     /**
      * Return the detailed user profile based on the specific query conditions.
      * @param user
      * @return
      */
-    PatientDto getPatientProfile(final PatientDto user);
+    PatientInformationDto getPatientProfile(final PatientInformationDto user);
 
     /**
      *
      * @param doctorUserId
      * @return
      */
-    List<PatientDto> listAllPatiensBelongsToThisDoctor(final String doctorUserId);
+    List<PatientInformationDto> listAllPatiensBelongsToThisDoctor(final String doctorUserId);
 
     /**
      *
      * @param user
      * @return
      */
-    List<PatientMedicalRecordXrefDto> listAllMedicalRecordsByUserInfo(final PatientDto user);
+    List<PatientMedicalRecordXrefDto> listAllMedicalRecordsByUserInfo(final PatientInformationDto user);
 }

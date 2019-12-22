@@ -20,6 +20,6 @@ public class MedicalRecordController {
     @GetMapping("/medical-records/add")
     public String goLogin() {
 
-        return "day1";
+        return "day1_step1";
     }
 }

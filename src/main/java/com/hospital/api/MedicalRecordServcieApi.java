@@ -1,6 +1,6 @@
 package com.hospital.api;
 
-import com.hospital.model.PatientDto;
+import com.hospital.model.PatientInformationDto;
 import org.springframework.http.ResponseEntity;
 
 /**
@@ -14,12 +14,12 @@ public interface MedicalRecordServcieApi {
      * @param dto
      * @return
      */
-    ResponseEntity<PatientDto>  saveMedicalRecord(final PatientDto dto);
+    ResponseEntity<PatientInformationDto>  saveMedicalRecord(final PatientInformationDto dto);
 
     /**
      *
-     * @param patientDto
+     * @param patientInformationDto
      * @return
      */
-    ResponseEntity<PatientDto> getMedicalRecordByPatient(final PatientDto patientDto);
+    ResponseEntity<PatientInformationDto> getMedicalRecordByPatient(final PatientInformationDto patientInformationDto);
 }
