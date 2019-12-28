@@ -53,8 +53,8 @@ public class DownloadCsvController  {
         ICsvBeanWriter csvWriter = new CsvBeanWriter(response.getWriter(),
                 CsvPreference.STANDARD_PREFERENCE);
 
-        String[] header = { "Title", "Description", "Author", "Publisher",
-                "isbn", "PublishedDate", "Price" };
+        String[] header = { "userName", "phoneNo", "Gender", "nextCheckDate",
+                "checkResult", "address" };
 
         csvWriter.writeHeader(header);
 
