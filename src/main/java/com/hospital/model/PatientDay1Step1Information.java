@@ -27,4 +27,5 @@ public class PatientDay1Step1Information {
     private String rightOvary1;
     private String leftOvary;
     private String leftOvary1;
+    private String lmpDate;
 }

@@ -11,10 +11,12 @@ public class PatientDay1Step2Information {
     private String hasOvalation;
     private String ovaryResult;
     private String operationDate;
-    private String way;
-    //TODO:
-
-
+    private String operationWay;
+    private String oviduct;
+    private String uterus;
+    private String ovary;
+    private String pelvic;
+    private String result;
     private String iuiDate;
     private String iuiResult;
     private String iui;

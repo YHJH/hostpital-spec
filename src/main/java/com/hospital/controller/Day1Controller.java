@@ -97,12 +97,8 @@ public class Day1Controller {
     private PatientInformationDto build(final HttpServletRequest request, final AccountDto doctor){
         val dto = new PatientInformationDto();
         dto.setAcademicDegree(request.getParameter("academicDegree"));
-        dto.setAge(request.getParameter("age"));
         dto.setBelongsToDoctor(doctor.getAccountId());
         dto.setCertificateId(request.getParameter("certificateId"));
-        dto.setCertificateType(request.getParameter("certificateType"));
-        dto.setCurrentStatus("day1");
-        dto.setGender(request.getParameter("gender"));
         dto.setPhoneNo(request.getParameter("phoneNo"));
         dto.setNationality(request.getParameter("nationality"));
         dto.setOccupation(request.getParameter("occupation"));
